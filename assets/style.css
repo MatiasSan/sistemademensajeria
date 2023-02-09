@@ -1,0 +1,116 @@
+:root {
+  --clr-white: #fff;
+  --clr-platinum: #e8ebe4;
+  --clr-gray: #bec1bb;
+  --clr-blueBell: #a491d2;
+  --clr-soap: #cdc3e6;
+  --clr-paleLavender: #d4dcff;
+  --clr-darkJungle: #1b1f21;
+  --clr-outerSpace: #444749;
+  --clr-oldSilver: #828485;
+
+  --ff-base: "Roboto", sans-serif;
+  --ff-contact: "Open Sans", sans-serif;
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+}
+
+.contenedor {
+  display: flex;
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 350%;
+  font-weight: 100;
+}
+
+/* Principal */
+
+.principal {
+  background-color: var(--clr-platinum);
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal__card {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.principal__card img {
+  width: 50%;
+  border-radius: 5%;
+}
+
+/* Contactos */
+
+.contacto {
+  background-color: var(--clr-white);
+  border-right: 2px solid var(--clr-gray);
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto__container {
+  display: flex;
+}
+
+.contacto__estado {
+  border-bottom: 2px solid var(--clr-gray);
+  display: flex;
+}
+
+.contacto__estado img {
+  border-radius: 50%;
+  width: 15%;
+}
+
+.contacto__chat {
+  border-bottom: 2px solid var(--clr-gray);
+}
+
+.iconos {
+  display: flex;
+}
+
+.contacto__chat img {
+  border-radius: 50%;
+  width: 30%;
+}
+
+.activa {
+  color: var(--clr-gray);
+}
+
+/* Botonera */
+
+.contacto__btn {
+  border-bottom: 2px solid var(--clr-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.contacto__btn button {
+  color: var(--clr-white);
+  background-color: var(--clr-blueBell);
+  width: 200px;
+  height: 50px;
+}
